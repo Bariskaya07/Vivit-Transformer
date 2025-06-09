@@ -1,11 +1,12 @@
 Bu proje, güvenlik kameralarından elde edilen videolarda anormal olayları tespit etmek amacıyla geliştirilen bir video işleme sistemidir. UCF-Crime veri seti üzerinde çalışılmış ve Video Vision Transformer (ViViT) mimarisi kullanılarak bir derin öğrenme modeli oluşturulmuştur. Çevresel gürültüyü azaltmak için öncelikle Mask R-CNN ile insan ve araç gibi nesnelerin bulunduğu bölgeler tespit edilmiş, ardından bu bölgeler üzerinden TV-L1 yöntemiyle optik akış hesaplanmıştır. Elde edilen hareket bilgisi ViViT modeline giriş olarak verilmiş ve model anomalileri yüksek doğrulukla sınıflandırabilmiştir. Bu yaklaşım, klasik ViViT modellerine kıyasla %37 daha yüksek doğruluk ve %45 daha iyi F1 skoru elde etmiştir.
 
 ---
-
-````markdown
 # 🧠 ViViT-Flow: Anomaly Detection in Surveillance Videos
 
 A deep learning-based video anomaly detection pipeline using **ViViT (Video Vision Transformer)**, enhanced with **instance segmentation** and **masked optical flow** preprocessing. Applied on the **UCF-Crime dataset** for detecting real-world anomalies in surveillance footage.
+
+````markdown
+
 
 ---
 
